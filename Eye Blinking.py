@@ -15,7 +15,7 @@ while True:
 
     font = cv2.FONT_HERSHEY_COMPLEX
 
-    count = 1
+    #count = 1
 
     faces = detector(gray)
 
@@ -84,9 +84,9 @@ while True:
         ratio = (L_ratio + R_ratio)/2
         
         if ratio > 5:
-            count = count+1
-            cv2.putText(frame,"blinks: {}".format(count),(50,150),font,1,(0,0,255),1)
-            count = 0
+           # count = count+1
+            cv2.putText(frame,"Blinking",(50,150),font,1,(0,0,255),1)
+           # count = 0
        
             
     cv2.imshow('frame',frame)
